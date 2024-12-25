@@ -106,11 +106,11 @@
 👨‍💻 **Team Name:** TECH DEVILS 👾
 
 - **[Kartik Dani]**: [GitHub](https://github.com/Devilkd23) | [LinkedIn](https://www.linkedin.com/in/kartik-dani-06744b257)
-- **[Teammate 1]**: [GitHub]() | [LinkedIn]()
-- **[Teammate 2]**: [GitHub]() | [LinkedIn]()
+- **[Nishant Vishwakarma]**: [GitHub]() | [LinkedIn]()
+- **[Pranav Mahale]**: [GitHub]() | [LinkedIn]()
 - **[Sameet Patil]**: [GitHub](https://github.com/sameetpatil5) | [LinkedIn](https://www.linkedin.com/in/sameetpatil5)
 - **[Siddhant Ingole]**: [GitHub](https://github.com/siddhantingole45) | [LinkedIn](https://www.linkedin.com/in/siddhant-ingole-70b412260)
-- **[Teammate 5]**: [GitHub]() | [LinkedIn]()
+- **[Rehan Attar]**: [GitHub]() | [LinkedIn]()
 
 ---
 
