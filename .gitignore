@@ -135,6 +135,8 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+.AgroDiagnoseAI_venv
+.AgroDiagnoseAI_venv/
 
 # Spyder project settings
 .spyderproject
@@ -169,3 +171,9 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# VS Code
+.vscode
+
+# Tensorflow backup file
+tensorflow-2.18.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
