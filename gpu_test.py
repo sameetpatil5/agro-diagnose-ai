@@ -3,12 +3,7 @@ import tensorflow as tf
 
 load_dotenv()
 
-# List available GPUs
-gpus = tf.config.list_physical_devices("GPU")
-if gpus:
-    print("GPU available:", gpus)
-else:
-    print("No GPU available.")
+print(tf.__version__)
 
 # Perform a simple GPU computation
 with tf.device("/GPU:0"):
