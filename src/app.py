@@ -38,12 +38,12 @@ if app_mode == "🏠 Home":
     st.markdown(
         """
         ### Welcome to Plant Health Companion 🌱
-        Effortlessly diagnose plant diseases and take timely actions to save your crops.  
+        Effortlessly diagnose plant diseases and take timely actions to save your crops.
         #### Features:
         - 🌟 AI-powered disease detection
         - 📊 Insightful analysis and treatment suggestions
-        - 🌍 Accessible to farmers everywhere  
-        Navigate to **Disease Recognition** to upload a plant image and get started!  
+        - 🌍 Accessible to farmers everywhere
+        Navigate to **Disease Recognition** to upload a plant image and get started!
         """
     )
 
@@ -51,16 +51,16 @@ elif app_mode == "📚 About":
     st.title("📚 About the Project")
     st.markdown(
         """
-        This project uses a dataset derived from the **PlantVillage** dataset.  
+        This project uses a dataset derived from the **PlantVillage** dataset.
         ### Dataset Details:
-        - **Training Images**: 70,295  
-        - **Validation Images**: 17,572  
-        - **Test Images**: 33  
-        - **Classes**: 38 plant diseases, including healthy leaves.  
+        - **Training Images**: 70,295
+        - **Validation Images**: 17,572
+        - **Test Images**: 33
+        - **Classes**: 38 plant diseases, including healthy leaves.
         ### Technology Stack:
-        - **TensorFlow** for deep learning  
-        - **Streamlit** for the user interface  
-        - **Google Cloud** for secure image storage  
+        - **TensorFlow** for deep learning
+        - **Streamlit** for the user interface
+        - **Google Cloud** for secure image storage
         """
     )
 
