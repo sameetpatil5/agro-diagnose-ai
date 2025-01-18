@@ -120,6 +120,10 @@ Have suggestions or ideas to improve the platform? We'd love to hear from you! S
 
 ---
 
+![Thank You](https://img.shields.io/badge/Thank%20You%20for%20Your%20Support-%F0%9F%8C%BF-yellow?style=for-the-badge)
+
+---
+
 ## 🔢 **Project Progress**
 
 ### To-Do List
@@ -127,12 +131,11 @@ Have suggestions or ideas to improve the platform? We'd love to hear from you! S
 | Task                                | Status        | Progress |
 | ----------------------------------- | ------------- | -------- |
 | Set up project repository           | ✅ Completed   | 100%     |
-| Design Streamlit UI                 | ⏳ In Progress | 20%      |
-| Develop plant/leaf classification   | ⏳ In Progress | 0%       |
+| Design Streamlit UI                 | ⏳ In Progress | 50%      |
+| Develop plant/leaf classification   | ⏳ In Progress | 40%      |
 | Train plant species identification  | ❌ Not Started | 0%       |
 | Implement disease detection model   | ❌ Not Started | 0%       |
 | Integrate models with Streamlit UI  | ❌ Not Started | 0%       |
 | Add multilingual and voice features | ❌ Not Started | 0%       |
 | Test and deploy on cloud            | ❌ Not Started | 0%       |
 | Collect user feedback               | ❌ Not Started | 0%       |
-
