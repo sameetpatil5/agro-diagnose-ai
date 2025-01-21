@@ -29,7 +29,7 @@ A new dataset PlantDoc Dataset @2020 is available with relatively decent size an
 1. Download datasets and organize into `train`, `validation`, and `test` folders.
 2. Visualize class distribution and dataset splits.
 
-Dividing the dataset into 3 groups is important so as to maintain high accuracy 
+Dividing the dataset into 3 groups is important so as to maintain high accuracy. Ensure that the splits maintain the same class distribution across train, validation, and test to prevent bias and overfitting.
 Almost all the papers and articles I referred to have a description about the dataset to check for class distribution and to get an idea of how to preprocessing them for better accuracy.
 
 #### Visualizations:
@@ -42,7 +42,7 @@ Almost all the papers and articles I referred to have a description about the da
 
 The model referred form the tutorial does not perform any preprocessing on the images. Essentially with preprocessing I am referring to augmenting images to create variety and avoid overfitting.
 
-General techniques include altering Brightness, contrast, sharpness, rotations, noise addition, jittering. Further enhancements may also include gray scaling and segmenting images but they need to be tested for individual model and compared to reach an conclusion weather or not to use them in the final training model.  
+General techniques include altering Brightness, contrast, sharpness, rotations, noise addition, jittering. Further enhancements may include grayscale conversion and background segmentation. However, these techniques should be tested carefully, as they might reduce the model's ability to learn color and texture features critical for plant disease detection.
 
 #### Steps:
 1. **Data Augmentation:**
@@ -54,9 +54,7 @@ General techniques include altering Brightness, contrast, sharpness, rotations, 
    - Convert to grayscale.
    - Segment images to remove backgrounds.
 
-It is important to visualize the augmentation performed on the images we can only push the model as far as a human can go. after preprocessing if a human couldn't classify the disease then its unlikely that the model will be able to.
-
-Although we don't have right resources to check HLP(Human Level Performance) and compare them but its an important point to consider when training.
+It is important to visualize the augmentation performed on the images. Although CNN usually out perform humans, but its important to understand the impact of the augmentation on the image so as not to completely strip down the features. Hence visualization of any considerable pattern in the augmentation will help deciding whether to use those images for training or not. 
 
 #### Visualizations:
 - Augmented images with descriptions of augmentations applied.
@@ -67,7 +65,7 @@ Although we don't have right resources to check HLP(Human Level Performance) and
 
 Even Training a simple CNN model is a much more time consuming process ~0.33 GPU hours. Which is significant because its possible we will need to training multiple modals. This is important because the current model has only 7M parameters but while using transfer learning the parameters scale significantly around 24M parameters which is 3x the normal CNN.
 
-Right now the Plan is you take inspirations form the models online form research papers and the layers used in the transfer learning models to craft a custom CNN with relatively low parameters. But we do need to test the transfer learning models especially MobileNet, InceptionV3, EfficientNetB4. ResNet50 has been proved to be inefficient consistently in many articles and papers. But we can still test it if we get time.
+For Custom CNN models, the architecture should balance simplicity and performance by minimizing parameters while retaining sufficient capacity to learn complex features. But we do need to test the transfer learning models especially MobileNet, InceptionV3, EfficientNetB4. ResNet50 has been proved to be inefficient consistently in many articles and papers. But we can still test it if we get time.
 
 #### Custom CNN Models:
 1. **Custom CNN 1:**
@@ -118,7 +116,7 @@ Plot a combined graph of accuracy and loss of all the models to get an idea and 
 
 ## Testing Notebook Outline
 
-We will perform testing individually on each model and combine the results later for comparision.
+We will perform testing individually on each model and combine the results later for comparison.
 
 ### 1. Dataset Preparation for Testing
 
@@ -138,6 +136,8 @@ The preprocessing steps performed here will be required to perform on all the im
 1. Load trained models.
 2. Predict on test images.
 3. Generate confusion matrices and classification reports.
+
+Plotting AUC-ROC curves to better evaluate model performance across all thresholds.
 
 #### Visualizations:
 - Confusion matrix.
