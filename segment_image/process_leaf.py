@@ -2,9 +2,9 @@ import cv2
 import numpy as np
 import os
 
-
 def preprocess_leaf(image_path, output_path="preprocessed_leaf.png"):
     """Preprocesses a leaf image by removing the background using Otsu's thresholding and GrabCut."""
+
     image = cv2.imread(image_path)
     if image is None:
         print(f"Error loading image: {image_path}")
@@ -37,10 +37,9 @@ def preprocess_leaf(image_path, output_path="preprocessed_leaf.png"):
 
 # Example usage:
 if __name__ == "__main__":
-    # image_path = "sample_image_test.jpg"
-    image_path = "/home/sam5io/sam_engineerings/AgroDiagnoseAI/segment_image/sample_image_test.jpg"
+    image_path = "segment_image/sample_image_test.jpg" 
 
     preprocess_leaf(
         image_path,
-        "/home/sam5io/sam_engineerings/AgroDiagnoseAI/segment_image/preprocessed_leaf.png",
+        "segment_image/preprocessed_leaf.png",
     )
